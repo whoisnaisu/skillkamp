@@ -1,29 +1,17 @@
-# skillkamp-study-case
+# What is skillkamp?
 
-## Project setup
-```
-npm install
-```
+โอกาสครั้งสำคัญเพื่อให้คุณเข้าใกล้อาชีพในฝันมากยิ่งขึ้น สำหรับผู้ที่มีความสนใจ สายงานดิจิทัลกับการทำโจทย์ Business case จริงจากบริษัทชั้นนำแบบฟรีๆ พร้อมทั้งมี mentor มากประสบการณ์ให้คำปรึกษาแบบใกล้ชิดระหว่างร่วมโครงการ (https://www.skillkamp.com/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# My position
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Front-end Developer
 
-### Run your unit tests
-```
-npm run test:unit
-```
+# Start project date
 
-### Lints and fixes files
-```
-npm run lint
-```
+April 1, 2023
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# The chosen tech stack
+
+- TypeScript (ability to enhance the control and management of data types)
+- Vue.js (ease of use and fast set-up, as well as its well-structured framework)
+- SCSS (able to create variables, nesting, inheritance, and so on which makes my code more easier to maintain)
