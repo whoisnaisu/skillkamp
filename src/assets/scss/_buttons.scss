@@ -1,0 +1,123 @@
+@import "colors.scss";
+
+.btn-base {
+  background-color: $primary-1;
+  color: $primary-2;
+  border-style: none;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $primary-3;
+  }
+
+  &:active {
+    background-color: $primary-3;
+    color: $primary-2;
+  }
+
+  &:focus {
+    background-color: $primary-1;
+    border: 3px solid $primary-3;
+  }
+
+  &:disabled {
+    color: $neutral-500;
+    background-color: $neutral-300;
+    cursor: not-allowed;
+  }
+}
+
+.large-primary-btn {
+  @extend .btn-base;
+  width: 102px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.normal-primary-btn {
+  @extend .btn-base;
+  width: 91px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.small-primary-btn {
+  @extend .btn-base;
+  width: 86px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.btn-base-secondary {
+  background-color: $primary-2;
+  color: $primary-1;
+  border-style: 1px solid black;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    color: $primary-4;
+  }
+
+  &:focus {
+    background-color: $primary-1;
+    border: 3px solid $primary-3;
+    color: $primary-2;
+  }
+
+  &:disabled {
+    color: $neutral-500;
+    background-color: $neutral-300;
+    cursor: not-allowed;
+    border: none;
+  }
+}
+
+.large-secondary-btn {
+  @extend .btn-base-secondary;
+  width: 102px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.normal-secondary-btn {
+  @extend .btn-base-secondary;
+  width: 91px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.small-secondary-btn {
+  @extend .btn-base-secondary;
+  width: 86px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.btn-base-tertiary {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: $primary-1;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.large-tertiary-btn {
+  @extend .btn-base-tertiary;
+  width: fit-content;
+  height: 60px;
+  font-size: 20px;
+}
+
+.normal-tertiary-btn {
+  @extend .btn-base-tertiary;
+  width: fit-content;
+  height: 48px;
+  font-size: 16px;
+}
+
+.small-tertiary-btn {
+  @extend .btn-base-tertiary;
+  width: fit-content;
+  height: 40px;
+  font-size: 14px;
+}
