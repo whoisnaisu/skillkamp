@@ -3,8 +3,8 @@
     <div class="top-banner">Get 10% Off - Use Coupon Code HAPPY123</div>
     <div class="main-nav-text">h a p p y&ensp;k i d s</div>
     <div class="bottom-area">
-      <div class="main-menu">
-        <ul class="main-menu-items">
+      <div class="group-menu-items left">
+        <ul class="ul-items">
           <li
             v-for="(item, index) in filteredMenuItems(MainMenu)"
             :key="`parent_${index}`"
@@ -13,9 +13,16 @@
             {{ item.text }}
           </li>
         </ul>
+      </div>
 
-        <div>Log In <i class="bi bi-person-circle"></i></div>
-        <div>ตะกร้าสินค้า</div>
+      <div class="group-menu-items right">
+        <div class="log-in">
+          <div class="icon login"><i class="bi bi-person-circle"></i></div>
+          <div>Log In</div>
+        </div>
+        <div>
+          <div class="icon"><i class="bi bi-cart2"></i></div>
+        </div>
       </div>
     </div>
   </nav>
@@ -53,39 +60,69 @@ export default class extends Vue {
 
 .top-banner {
   width: 100%;
-  height: 4rem;
+  height: 3.2rem;
   text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(7, 7, 7);
+  background-color: $primary-1;
   color: white;
 }
 .main-nav-text {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: bold;
-}
-.main-menu {
-  display: flex;
-  .main-menu-items {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: fit-content;
-    color: black;
-
-    li {
-      padding: 0 2.5rem 0 2.5rem;
-      transition: color 0.4s ease;
-    }
-
-    li:hover {
-      color: $primary-5;
-    }
-  }
+  color: $primary-1;
 }
 
 .bottom-area {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ul-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  color: black;
+
+  li {
+    padding: 0 2.5rem 0 2.5rem;
+    transition: color 0.4s ease;
+  }
+
+  li:hover {
+    color: $primary-5;
+  }
+}
+
+.group-menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 5rem;
+}
+
+.left {
+  margin: 0 4rem 0 0;
+}
+
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 0 0;
+}
+
+.icon {
+  margin: 0 1rem 0.6rem 0;
+  transform: scale(140%);
 }
 </style>
