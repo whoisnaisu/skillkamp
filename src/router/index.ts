@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import MainView from "../views/MainView.vue";
-import ShopCollection from "../components/homePage/ShopCollection.vue";
+import HomeView from "../views/HomeView.vue";
+import ShopCollection from "../components/collection/ShopCollection.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    name: "main",
-    component: MainView,
+    path: "/home",
+    name: "home",
+    component: HomeView,
   },
   {
-    path: "/home/collection",
+    path: "/collection",
     name: "Shop Collection",
     component: ShopCollection,
   },

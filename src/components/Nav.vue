@@ -10,7 +10,7 @@
             :key="`parent_${index}`"
             :data-flag="item.id"
           >
-            {{ item.text }}
+            <a :href="item.route"> {{ item.text }}</a>
           </li>
         </ul>
       </div>
