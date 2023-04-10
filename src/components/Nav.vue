@@ -17,8 +17,10 @@
 
       <div class="group-menu-items right">
         <div class="log-in">
-          <div class="icon login"><i class="bi bi-person-circle"></i></div>
-          <div>Log In</div>
+          <router-link :to="`/register`">
+            <div class="icon login"><i class="bi bi-person-circle"></i></div>
+          </router-link>
+          <div><a href="/login">Log In</a></div>
         </div>
         <div>
           <div class="icon"><i class="bi bi-cart2"></i></div>
@@ -29,10 +31,14 @@
 </template>
 
 <script lang="ts">
+import { RouterLink } from "vue-router";
 import { Options, Vue } from "vue-class-component";
 import { MainMenu } from "@/constants/MainMenu";
 
 @Options({
+  components: {
+    RouterLink,
+  },
   props: {
     msg: String,
   },

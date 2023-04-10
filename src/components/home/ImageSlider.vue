@@ -11,43 +11,38 @@
 </template>
 
 <script lang="ts">
-export default {
-  name: "ImageSlider",
-  data() {
-    return {
-      images: [
-        require("@/assets/images/photoSlider/Banner1.png"),
-        require("@/assets/images/photoSlider/Banner2.png"),
-        require("@/assets/images/photoSlider/Banner3.png"),
-      ],
-      timer: 0,
-      currentIndex: 0,
-    };
-  },
+import { Vue } from "vue-class-component";
+
+export default class ImageSlider extends Vue {
+  images = [
+    require("@/assets/images/photoSlider/Banner1.png"),
+    require("@/assets/images/photoSlider/Banner2.png"),
+    require("@/assets/images/photoSlider/Banner3.png"),
+  ];
+
+  timer = 0;
+  currentIndex = 0;
 
   mounted() {
     this.startSlide();
-  },
+  }
 
-  methods: {
-    startSlide() {
-      this.timer = setInterval(this.next, 8000);
-    },
+  startSlide() {
+    this.timer = setInterval(this.next.bind(this), 8000);
+  }
 
-    next() {
-      this.currentIndex += 1;
-    },
-    prev() {
-      this.currentIndex -= 1;
-    },
-  },
+  next() {
+    this.currentIndex += 1;
+  }
 
-  computed: {
-    currentImg() {
-      return this.images[Math.abs(this.currentIndex) % this.images.length];
-    },
-  },
-};
+  prev() {
+    this.currentIndex -= 1;
+  }
+
+  get currentImg() {
+    return this.images[Math.abs(this.currentIndex) % this.images.length];
+  }
+}
 </script>
 
 <style lang="scss" scoped>

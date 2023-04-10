@@ -53,6 +53,9 @@
   color: $primary-1;
   border-style: 1px solid black;
   transition: background-color 0.2s ease-in-out;
+  width: fit-content;
+  padding: 0 1rem 0 1rem;
+  white-space: nowrap;
 
   &:hover {
     color: $primary-4;
@@ -74,21 +77,18 @@
 
 .large-secondary-btn {
   @extend .btn-base-secondary;
-  width: 102px;
   height: 60px;
   font-size: 20px;
 }
 
 .normal-secondary-btn {
   @extend .btn-base-secondary;
-  width: 91px;
   height: 48px;
   font-size: 16px;
 }
 
 .small-secondary-btn {
   @extend .btn-base-secondary;
-  width: 86px;
   height: 40px;
   font-size: 14px;
 }
@@ -99,25 +99,23 @@
   color: $primary-1;
   font-weight: bold;
   text-decoration: underline;
+  width: fit-content;
 }
 
 .large-tertiary-btn {
   @extend .btn-base-tertiary;
-  width: fit-content;
   height: 60px;
   font-size: 20px;
 }
 
 .normal-tertiary-btn {
   @extend .btn-base-tertiary;
-  width: fit-content;
   height: 48px;
   font-size: 16px;
 }
 
 .small-tertiary-btn {
   @extend .btn-base-tertiary;
-  width: fit-content;
   height: 40px;
   font-size: 14px;
 }
