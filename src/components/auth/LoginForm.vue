@@ -58,6 +58,9 @@ export default class LoginForm extends Vue {
       );
       console.log(response.data);
       localStorage.setItem("token", response.data.token);
+      axios.defaults.headers.common[
+        "Authorization"
+      ] = `Bearer ${response.data.token}`;
       this.$router.push("/");
     } catch (error) {
       console.log(error);
@@ -65,5 +68,3 @@ export default class LoginForm extends Vue {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

@@ -3,128 +3,129 @@
 @import "../buttons";
 
 .nav-bar {
-    width: 100%;
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(226, 226, 226);
-  }
-  
-  .top-banner {
-    width: 100%;
-    height: 3.2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary-1;
-    color: white;
-  }
-  .main-nav-text {
-    font-size: 3.8rem;
-    font-weight: bold;
-    color: $primary-1;
-  }
-  
-  .bottom-area {
-    margin: 0 0 1rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .ul-items {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-  
-    color: black;
-  
-    li {
-      padding: 0 2.5rem 0 2.5rem;
-      transition: color 0.4s ease;
-    }
-  
-    li:hover {
-      color: $primary-5;
-    }
-  }
-  
-  .group-menu-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: 5rem;
-  }
-  
-  .left {
-    margin: 0 4rem 0 0;
-  }
-  
-  .log-in {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2rem 0 0;
-  }
-  
-  .icon {
-    margin: 0 1rem 0.6rem 0;
-    transform: scale(140%);
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.top-banner {
+  width: 100%;
+  height: 3.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-1;
+  color: white;
+}
+
+.main-nav-text {
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: $primary-1;
+}
+
+.bottom-area {
+  margin: 0 0 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ul-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  color: black;
+
+  li {
+    padding: 0 2.5rem 0 2.5rem;
+    transition: color 0.4s ease;
   }
 
-  
+  li:hover {
+    color: $primary-5;
+  }
+}
+
+.group-menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 5rem;
+}
+
+.left {
+  margin: 0 4rem 0 0;
+}
+
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 0 0;
+}
+
+.icon {
+  margin: 0 1rem 0.6rem 0;
+  transform: scale(140%);
+}
+
+
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid $primary-1;
-    height: 25rem;
-    padding: 1.5rem 0 1.5rem 0;
-  }
-  
-  .footer-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: $primary-1;
-  }
-  
-  .ul-items-col {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-  
-    color: black;
-  
-    li {
-      padding: 0 2.5rem 0 2.5rem;
-      transition: color 0.4s ease;
-    }
-  
-    li:hover {
-      color: $primary-5;
-    }
-  }
-  
-  .main-footer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $primary-1;
+  height: 25rem;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.footer-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $primary-1;
+}
+
+.ul-items-col {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  color: black;
+
+  li {
+    padding: 0 2.5rem 0 2.5rem;
+    transition: color 0.4s ease;
   }
 
-  .social-media {
-    margin: 0 2rem 0 2rem;
+  li:hover {
+    color: $primary-5;
   }
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  margin: 0 2rem 0 2rem;
+}

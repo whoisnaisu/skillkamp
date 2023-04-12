@@ -1,7 +1,8 @@
 @import "fonts";
 @import "colors";
 @import "buttons";
-@import "./pages/home.page";
+@import "./pages/_home.page";
+@import "./pages/_our.story.page";
 @import "./pages/_auth.page";
 
 * {
@@ -15,5 +16,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-   

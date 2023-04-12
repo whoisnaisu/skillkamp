@@ -1,5 +1,5 @@
 <template>
-  <div class="collection">
+  <div class="contact">
     <Nav />
     <Footer />
   </div>
@@ -16,5 +16,5 @@ import Footer from "@/components/Footer.vue";
     Footer,
   },
 })
-export default class CollectionView extends Vue {}
+export default class ContactVue extends Vue {}
 </script>
